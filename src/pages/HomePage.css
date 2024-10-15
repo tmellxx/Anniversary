@@ -14,12 +14,30 @@
 
 .p-hero {
   font-family: 'Anonymous Pro', sans-serif;
+  font-size: 20px;
 }
 
 .knuffi {
-  width: 160px;
+  width: 190px;
   pointer-events: none;
   margin-bottom: 20px;
+  animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+
+  0%,
+  100% {
+    rotate: -3deg;
+    transform: translateX(-3px);
+  }
+
+  50% {
+    rotate: 3deg;
+    transform: translateX(3px);
+
+  }
+
 }
 
 .snapstr-btn,
